@@ -1,0 +1,100 @@
+:root{
+  --light-gray: #ddd;
+  --dark-gray: #aaa;
+  --table-radius: 8px;
+}
+
+table{
+  min-width: 600px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family:sans-serif;
+}
+
+th, td{
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+thead th{
+  color: #fff;
+  font-weight: bold;
+ 
+  
+}
+
+thead th:not(:first-child){
+  width: 17%;
+}
+
+
+thead th p:nth-child(2){
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-size: 2em;
+  font-weight: bold;
+  
+}
+
+tfoot button{
+  padding: 5px 10px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+tbody td:first-child{
+  padding-left: 20px;
+  text-align: left ;
+
+}
+
+thead>tr>th:nth-child(2){
+  background-color: rgb(73, 123, 170);
+}
+thead>tr>th:nth-child(3){
+  background-color: rgb(46, 87, 126);
+}
+
+thead>tr>th:nth-child(4){
+  background-color: rgb(16, 65, 110);
+}
+
+
+thead th:first-child{
+  border-top-left-radius: var(--table-radius);
+  background-color: rgb(153, 198, 228);
+}
+
+tfoot th:first-child{
+  border-bottom-left-radius : var(--table-radius);
+}
+
+thead th:last-child{
+  border-top-right-radius: var(--table-radius);
+  background-color: rgb(2, 28, 53);
+}
+
+tfoot th:last-child{
+  border-bottom-right-radius : var(--table-radius);
+}
+
+tbody tr:nth-child(odd) td:nth-child(odd),
+tfoot th:nth-child(odd){
+  background-color: var(--dark-gray);
+}
+
+tbody tr:nth-child(odd) td:nth-child(even),
+tbody tr:nth-child(even) td:nth-child(odd),
+tfoot th:nth-child(even){
+  background-color: var(--light-gray);
+}
+
+
+
+
+
+
